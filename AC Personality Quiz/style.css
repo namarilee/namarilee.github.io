@@ -1,0 +1,238 @@
+/* STYLE SECTIONING TAGS */
+/* * :not(header) {
+  background-color: #e6ddd1
+
+}*/
+html {
+    scroll-behavior:smooth
+}
+  
+@font-face {
+    font-family: "Gilmer Bold";
+    src: url("Fonts/Gilmer-Bold.ttf");
+}
+  
+  @font-face {
+    font-family: "Gilmer Regular";
+    src: url("Fonts/Gilmer-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "Fink Heavy";
+    src: url("Fonts/FinkHeavy.ttf");
+  }
+  
+body {
+    font-family: "Gilmer Bold";
+    margin: 0em;
+    text-align: center;
+    align-items: center;
+    background-color: #e6ddd1;
+    font-size: 3.4rem;
+    transition: background-color 1s ease;
+}
+  
+.color-yellow {
+    background: #fffcf0;
+}
+  
+  .color-teal {
+    background: #e5fffb;
+  }
+  
+  .color-blue {
+    background: #e0ffe0;
+  }
+  header {
+    background-image: url("assets/ac_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+      position: relative;
+    padding: 265px 100px 30px 50px;
+    text-align: center;
+      top: 0px;
+  }
+  
+  header img {
+    height: 100%;
+    width: 100%;
+    margin-top: 1em;
+  }
+  /* STYLE TEXT */
+  h1 {
+    color: #ffffff;
+    font-size: 3.4rem;
+  }
+  
+  h2 {
+    margin-top: 3em; 
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-family: "Gilmer Regular";
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 30em; 
+    margin-right: 30em;
+  }
+  
+  .title {
+    padding-left: 2em;
+    color: white;
+  
+  }
+  
+  a {
+    padding-left: 2em;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2em;
+    margin-bottom: 10em;
+    text-decoration-style: solid;
+    text-underline-position: under;
+    text-decoration-color: #4568ba;
+  }
+  #ac {
+    color: #fff563
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    text-decoration-style: solid;
+    text-underline-position: under;
+  }
+  
+  a:hover {
+    
+    text-decoration-style: wavy;
+  }
+  #animalCrossing {
+    font-family: "Josefin Slab", serif;
+    letter-spacing: 0.01em;
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    white-space: nowrap;
+    color: #fff563;
+    background-color: #9e8364;
+    
+    }
+  
+  /* STYLE FLEX CONTAINER */
+  .question {
+    display: flex;
+    /* uncomment the next line to center the questions and answers */
+    justify-content: center;
+    margin-top: 2em;
+  }
+    
+  /* STYLE FLEX ITEM */
+  .answer-choice {
+    margin: 20px;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .answer-choice:hover {
+      transform: scale(1.08);
+      transition: 0.3s ease;
+      opacity: 1.0;
+    }
+  
+  /* STYLE IMAGES */
+  .answer-choice img {
+    height: 15em;
+    width: 22.5em;
+    border-radius: 10px;
+    
+  }
+  
+  .island-img {
+    width: 30%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5em;
+    margin-top: -2em;
+  }
+  
+  #img-result {
+    width: 10%;
+    height: 10%;
+  }
+  @media only screen and (min-width: 700px) {
+    .island-img:hover, #img-result:hover {
+      transform: rotate(10deg) scale(1.1);
+      transition: 0.3s ease;
+    }
+    
+  .left {
+    width: 20%;
+    height: 20%;
+    justify-content: left;
+    margin: auto;
+    margin-top: 100px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: left;
+  
+  }
+  
+  .right {
+    width: 20%;
+    height: 20%;
+    justify-content: right;
+    margin: auto;
+    margin-top: 100px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: right;
+  }
+  
+  /* STYLE BUTTON */
+  button { 
+    /*margin-top: 5px;*/
+    padding: 0em;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  #restart {
+    justify-content: center; 
+    font-family: "Gilmer Bold";
+    font-size: 18px;
+    text-decoration: none;
+    color: #0995E3;
+    border: 2px solid #0995E3;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 11px 18px 8px 18px;
+    border-radius: 7px;
+    display: inline-block;
+    transition: background-color 0.15s ease-in;
+  }
+  
+  #restart:hover {
+    background-color: #0995E3;
+    color: #fff;
+  }
+  
+  .social {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding-top: 50px;
+    margin-top: 300px;
+  }

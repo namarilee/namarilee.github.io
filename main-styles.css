@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Glamour";
+    src: url("Fonts/glamour-authentic.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Atlante";
+    src: url("Fonts/RNSAtlante-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Zapheline";
+    src: url("Fonts/Zapheline.ttf") format("truetype");
+}
+
+/* Intro section */
+
+#main-title-serif {
+	font-family: "Atlante";
+}
+
+#main-title-script {
+	font-family: "Zapheline";
+
+}
