@@ -1,3 +1,4 @@
+/* General */
 @font-face {
     font-family: "Glamour";
     src: url("Fonts/glamour-authentic.ttf") format("truetype");
@@ -9,20 +10,84 @@
 }
 
 @font-face {
-    font-family: "Zapheline";
-    src: url("Fonts/Zapheline.ttf") format("truetype");
+    font-family: "Gilmer";
+    src: url("Fonts/Gilmer-Regular.otf");
+}
+
+@font-face {
+    font-family: "Slowly Lovely";
+    src: url("Fonts/Slowly\ Lovely\ Script.ttf") format("truetype");
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/* NAV BAR STYLES*/
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 1.5em;
+    background-color:rgb(255, 255, 255); 
+    text-align: right;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+    font-family: "Atlante";
+
 }
 
 /* Intro section */
 
-#main-title-serif {
-	font-family: "Atlante";
-    font-size: 4em;
+#main-title-script {
+	font-family: "Slowly Lovely";
+    font-weight: normal;
+    font-size: 3.5em;
     margin-bottom: 0;
+
 }
 
-#main-title-script {
-	font-family: "Zapheline";
-    font-size: 8em;
+#main-title-serif {
+	font-family: "Glamour";
+    font-weight: normal;
+    font-size: 6em;
     margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+#main-title-text {
+    margin-top: 1em;
+    margin-left: 10em;
+    margin-right: 2em; 
+}
+
+h1 {
+    line-height: 1em;
+}
+
+#intro-blurb {
+    font-family: "Gilmer";
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+#pfp-img {
+    width: 40%;
+    height: 40%;
+    margin-top: 4em;
+    margin-right: 4em;
+    margin-left: -1em;
+    margin-bottom: 3em;
 }
