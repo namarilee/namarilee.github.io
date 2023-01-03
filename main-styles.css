@@ -17,9 +17,12 @@
 
 #main-title-serif {
 	font-family: "Atlante";
+    font-size: 4em;
+    margin-bottom: 0;
 }
 
 #main-title-script {
 	font-family: "Zapheline";
-
+    font-size: 8em;
+    margin-top: 0;
 }
