@@ -48,6 +48,11 @@ li a {
 
 }
 
+#ml-logo {
+    width: 70px;
+    height: 70px;
+}
+
 /* Intro section */
 
 #main-title-script {
@@ -90,10 +95,11 @@ h1 {
     margin-right: 4em;
     margin-left: -1em;
     margin-bottom: 3em;
+    transform: rotate(5deg);
     transition: all 0.3s;
 }
 
 #pfp-img:hover {
-    transform: rotate(5deg) scale(1.01);
+    transform: rotate(-5deg);
     transition: 0.3s ease;
  }
