@@ -90,4 +90,10 @@ h1 {
     margin-right: 4em;
     margin-left: -1em;
     margin-bottom: 3em;
+    transition: all 0.3s;
 }
+
+#pfp-img:hover {
+    transform: rotate(5deg) scale(1.01);
+    transition: 0.3s ease;
+ }
