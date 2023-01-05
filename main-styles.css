@@ -22,22 +22,27 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
-/* NAV BAR STYLES*/
+.clearfix{
+    clear:both
+}
+
+/* NAV BAR STYLES */
+
 
 ul {
     list-style-type: none;
     overflow: hidden;
-    padding: 1.5em;
+    padding-right: 1.5em; 
     background-color:rgb(255, 255, 255); 
-    text-align: right;
 }
 
 li {
     display: inline;
 }
+
 
 li a {
     padding: 1em;
@@ -45,14 +50,24 @@ li a {
     font-size: 1.3em;
     color: black;
     font-family: "Atlante";
+}
 
+#logo {
+    margin-left: 1.5em;
+    float: left;
 }
 
 #ml-logo {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 
+#nav-options {
+    float: right;
+    text-align: right;
+    justify-content: flex-end;
+
+}
 /* Intro section */
 
 #main-title-script {
