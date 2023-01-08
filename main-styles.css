@@ -29,6 +29,15 @@
     clear: both;
 }
 
+:root {
+    --dark-gray: #363636;
+    --purple: #CFA8C6;
+    --cyan: #86EAE1;
+    --yellow: #FFEAA6;
+    --pink: #E296B1;
+    --blue: #C2CDE6;
+}
+
 /* NAV BAR STYLES */
 
 
@@ -118,3 +127,27 @@ h1 {
     transform: rotate(-5deg);
     transition: 0.3s ease;
  }
+
+
+/* About section */
+
+#about {
+    background-color: var(--dark-gray);
+}
+
+#about-title {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Glamour";
+    font-weight: normal;
+    font-size: 3.5em;
+    padding-top: 2em;
+    background-size: contain;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+svg:not(:root) {
+    overflow:visible;
+}
