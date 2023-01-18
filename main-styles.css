@@ -151,3 +151,47 @@ h1 {
 svg:not(:root) {
     overflow:visible;
 }
+
+.center-container {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: left;
+    justify-content: center;
+}
+
+#about-me-facts {
+    font-family: "Gilmer";
+    font-weight: normal;
+    font-size: 0.7em;
+    color: white;
+    padding-bottom: 7em;
+
+}
+
+/* Projects section */
+
+#projects {
+    background-color: white;
+}
+
+#projects-title {
+    margin-top: 4em; 
+    margin-left: 37%;
+    margin-right: 25%;
+    text-align: left;
+    
+}
+
+#projects-italic {
+    font-family: "Atlante";
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#projects-serif {
+    font-family: "Glamour";
+    font-size: 4em;
+    margin-top: 0.4em;
+
+}
