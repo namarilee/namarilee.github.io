@@ -195,3 +195,56 @@ svg:not(:root) {
     margin-top: 0.4em;
 
 }
+
+#projects-grid {
+	display: grid;
+	width: 900px;
+	padding: 30px 0px 30px 0px;
+	grid-gap: 30px;
+	justify-content: center;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 0 auto;
+}
+
+#projects-grid div {
+	display: flex;
+	width: 500px;
+	flex-direction: column;
+	border-radius: 15px;
+    border-width: 1px;
+    border-color: var(--dark-gray);
+    border-style: solid;
+}
+
+#projects-grid img {
+    height: auto;
+    width: 80%; 
+    align-self: center;
+    padding: 25px 0px 15px 0px;
+
+}
+
+#projects-grid h3 {
+    font-family: "Glamour";
+    font-size: 2em;
+    margin-left: 1.7em;
+    margin-bottom: 0;
+}
+
+#projects-grid h4 {
+    font-family: "Atlante";
+    font-size: 1em;
+    margin-left: 3.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+#projects-grid p {
+    font-family: "Gilmer";
+    font-size: 1em;
+    margin-left: 3.2em;
+    margin-top: 0;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
