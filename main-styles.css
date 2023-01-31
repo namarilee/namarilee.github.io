@@ -249,3 +249,10 @@ svg:not(:root) {
     margin-right: 2em;
     margin-bottom: 2em;
 }
+
+#ending-block {
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+
+}
