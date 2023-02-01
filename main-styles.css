@@ -46,12 +46,12 @@ html {
     --blue: #C2CDE6;
 }
 
-/* body {
-    background-image: linear-gradient(to right, var(--cyan), var(--blue), var(--purple), var(--pink), var(--yellow));
 
-} */
 /* NAV BAR STYLES */
 
+#nav-bar {
+    top: 0;
+}
 
 ul {
     list-style-type: none;
@@ -81,13 +81,13 @@ li a {
 #ml-logo {
     width: 70px;
     height: 70px;
+
 }
 
 #nav-options {
     float: right;
-    text-align: right;
-    justify-content: flex-end;
-
+    /* margin-right: 0;     */
+    
 }
 /* Intro section */
 
@@ -277,7 +277,7 @@ svg:not(:root) {
 #involvement {
     background-color: #363636;
     margin: -10px;
-    padding-bottom: 2.5em;
+    padding-bottom: 5em;
 }
 
 #involvement-title {
