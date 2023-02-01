@@ -324,3 +324,33 @@ svg:not(:root) {
     font-family: "Gilmer";
     font-weight: normal;
 }
+
+
+/* Contact section */
+
+#contact {
+    padding-top: 0;
+    margin-top: 0;
+    background-image: linear-gradient(to right, var(--cyan), var(--blue), var(--purple), var(--pink), var(--yellow));
+}
+
+#contact h1 {
+    padding-top: 2em;
+    margin-left: 20%;
+    font-family: "Glamour";
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+#contact h2 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 20%;
+    font-family: "Atlante";
+    font-size: 2em;
+}
+
+#contact h3 {
+    margin-left: 20%;
+    font-family: 'Gilmer';
+}
