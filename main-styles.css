@@ -251,8 +251,68 @@ svg:not(:root) {
 }
 
 #ending-block {
-    justify-content: center;
-    align-items: center;
-    border-color: white;
+    margin-top: 3em;
 
+}
+
+/* Involvement section */
+
+#involvement {
+    background-color: #363636;
+}
+
+#involvement-title {
+    margin-top: 4em; 
+    padding-top: 4em; 
+    /* margin-left: 37%; */
+    margin-right: 40%;
+    text-align: right;
+    color: white;
+}
+
+#stuff-ive {
+    font-family: "Atlante";
+    font-size: 3.5em;
+    margin-bottom: 0;
+
+}
+
+#been-doing {
+    font-family: "Atlante";
+    font-size: 3.5em;
+    margin-top: 0.4em;
+}
+
+.activity {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-left: 25%;
+    margin-right: 25%;
+}
+
+.activity-image {
+    width: 25%;
+    height: 25%;
+    margin-right: 3em;
+}
+
+.activity-text {
+    color: white;
+}
+
+.activity h3 {
+    font-family: "Atlante";
+    margin-bottom: 0;
+}
+
+.activity h2 {
+    margin-top: 0;
+    font-family: "Glamour";
+    font-size: 2.5em;
+}
+
+.activity h4 {
+    font-family: "Gilmer";
+    font-weight: normal;
 }
