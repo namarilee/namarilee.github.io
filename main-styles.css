@@ -346,8 +346,9 @@ svg:not(:root) {
 
 #contact {
     margin: -55px;
-    padding: 0;
-    background-image: linear-gradient(to right, var(--cyan), var(--blue), var(--purple), var(--pink), var(--yellow));
+    padding-bottom: 1em;
+    background-image: url("main-assets/footer_gradient.png");
+    background-size:100%;
 }
 
 #contact h1 {
@@ -377,4 +378,25 @@ svg:not(:root) {
     text-decoration: none;
     color: #914cec;
     margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+/* Footer */
+
+#footer {
+    background-color: #363636;
+    margin-top: 0;
+    margin: -10px;
+
+}
+
+#footer h3 {
+    font-family: "Gilmer";
+    color: white;
+    margin-left: 18%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    font-size: 1em;
+    margin-bottom: 0;
+
 }
