@@ -346,9 +346,11 @@ svg:not(:root) {
 
 #contact {
     margin: -55px;
-    padding-top: -4em;
-    padding-bottom: 1em;
+    /* padding-top: -4em; */
+    /* padding-bottom: 1em; */
+    padding: -20;
     background-image: url("main-assets/footer_gradient.png");
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
