@@ -24,7 +24,7 @@
     src: url("Fonts/Slowly\ Lovely\ Script.ttf") format("truetype");
 }
 
-html {
+html { 
     scroll-behavior: smooth;
 }
 
