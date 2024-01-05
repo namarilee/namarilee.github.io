@@ -29,8 +29,8 @@ html {
 }
 
 * {
-    background: #fff3f8;
-    background-size: 400% 400%;
+    background: #fff7fa;
+    /* background-size: 400% 400%; */
 }
 
 
@@ -38,11 +38,20 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -2em;
+
 }
 
-.clearfix {
-    clear: both;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
+
+/* .clearfix {
+    clear: both;
+} */
 
 :root {
     --dark-gray: #363636;
@@ -168,6 +177,8 @@ h1 {
     font-family: "Gilmer";
     font-size: 1.2em;
  }
+
+
 
  #resume {
     font-family: "Atlante";
@@ -440,10 +451,14 @@ svg:not(:root) {
 
 footer {
     background-color: #363636;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-top: 3em;
     height: 4rem;
+    /* position: fixed; */
+    /* bottom: 0;
+    width: 100%;
+    
+    margin-top: 5em; */
+    /* margin: 0 !important; */
 }
 
 footer h3 {
