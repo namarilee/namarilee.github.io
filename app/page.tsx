@@ -17,10 +17,13 @@ export default function Home() {
           delightful interfaces and building inclusive communities.
         </h1>
         <p className="home-meta" aria-label="Education and location">
-          <FaGraduationCap aria-hidden="true" />
-          <span>Computer Science BS + MS &apos;27 @ USC</span>
-          <FaMapPin className="home-meta-pin" aria-hidden="true" />
-          <span>LA, SF</span>
+          <FaGraduationCap className="home-meta-icon" aria-hidden="true" />
+          <span className="home-meta-text">Computer Science BS + MS &apos;27 @ USC</span>
+          <span className="home-meta-spacer" aria-hidden="true" />
+          <span className="home-meta-location">
+            <FaMapPin className="home-meta-pin" aria-hidden="true" />
+            <span className="home-meta-location-text">LA, SF</span>
+          </span>
         </p>
 
         <nav className="social-links" aria-label="Social media links">

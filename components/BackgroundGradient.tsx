@@ -30,7 +30,7 @@ export default function BackgroundGradient() {
           height: 350,
           width: 350,
           borderRadius: "9999px",
-          backgroundColor: "rgba(255, 165, 196, 0.44)",
+          backgroundColor: "rgba(255, 165, 196, 0.5)",
           filter: "url(#noise) blur(120px)",
           animation: "drift-1 22s ease-in-out infinite",
         }}
@@ -58,7 +58,7 @@ export default function BackgroundGradient() {
           width: 270,
           borderRadius: "9999px",
 		  
-		  backgroundColor: "rgba(167, 243, 208, 0.1)",
+		  backgroundColor: "rgba(167, 243, 208, 0.4)",
           filter: "url(#noise) blur(120px)",
           animation: "drift-3 34s ease-in-out infinite",
         }}
@@ -71,7 +71,7 @@ export default function BackgroundGradient() {
           height: 250,
           width: 250,
           borderRadius: "9999px",
-		  backgroundColor: "rgba(138, 173, 255, 0.58)",
+		  backgroundColor: "rgba(138, 173, 255, 0.5)",
 
           filter: "url(#noise) blur(120px)",
           animation: "drift-4 26s ease-in-out infinite",
