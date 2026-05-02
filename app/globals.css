@@ -44,6 +44,10 @@ body {
   color: #1f1f1f;
 }
 
+/* main {
+  margin-right: 6rem;
+} */
+
 .home-page {
   min-height: 100vh;
   display: flex;
