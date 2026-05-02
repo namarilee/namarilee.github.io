@@ -18,7 +18,7 @@ export default function Home() {
         </h1>
         <p className="home-meta" aria-label="Education and location">
           <FaGraduationCap aria-hidden="true" />
-          <span>Computer Science BS + MS '27 @ USC</span>
+          <span>Computer Science BS + MS &apos;27 @ USC</span>
           <FaMapPin className="home-meta-pin" aria-hidden="true" />
           <span>LA, SF</span>
         </p>
