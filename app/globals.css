@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@1,400;1,700&display=swap");
 
 /* General */
@@ -63,7 +64,7 @@ body {
   font-family: "Volkhov", serif;
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(0.3rem, 2vw, 3rem);
+  font-size: clamp(1.7rem, 1.7vw, 1.7rem);
   line-height: 1.05;
   letter-spacing: 0em;
   text-align: left;
@@ -78,17 +79,20 @@ body {
 
 .social-links {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0.2rem;              /* small gap between icons */
   flex-wrap: wrap;
+  align-self: flex-start;
+  width: fit-content;
+  margin-left: 0rem;    /* nudges container left to compensate for first icon's padding */
 }
 
 .social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  padding: 0.4rem;          /* replaces the fixed width for hover target */
+  margin-left: -0.4rem;     /* offset the first icon's left padding so it aligns flush */
   color: #1e1e1e;
   text-decoration: none;
   transition: transform 0.18s ease, color 0.18s ease;
@@ -104,4 +108,110 @@ body {
   height: 1.6rem;
   fill: currentColor;
   display: block;
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 4.75rem;
+}
+
+.highlights-title {
+  margin: 0;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 0em;
+  color: #d388a3;
+}
+
+.highlights-row {
+  display: flex;
+  align-items: stretch;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.highlight-image {
+  height: 8rem;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 20px;
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.highlight-image:hover {
+  filter: grayscale(0);
+}
+
+.currently {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.75em;
+  gap: 0.65rem;
+}
+
+.currently-title {
+  margin: 0;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 0em;
+  margin-bottom: 1em;
+  color: #d388a3;
+}
+
+.currently-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 35rem;
+  align-self: flex-start;
+}
+
+.currently-role {
+  margin: 0;
+  font-family: "Azeret Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 50;
+  color: #575757;
+}
+
+.currently-bold {
+  font-weight: 500;
+}
+
+.currently-date {
+  margin: 0;
+  margin-left: auto;
+  font-family: "Volkhov", serif;
+  font-style:normal;
+  font-size: 0.8rem;
+  color: #1e1e1e;
+  text-align: right;
+}
+
+.currently-divider {
+  width: 35rem;
+  height: 1px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  align-self: flex-start;
+  background: repeating-linear-gradient(
+    to right,
+    #1e1e1e 0,
+    #1e1e1e 1px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+
+.previously {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
 }

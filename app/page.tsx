@@ -1,4 +1,10 @@
+import Image from "next/image";
 import { FaGithub, FaLinkedin, FaSpotify, FaXTwitter, FaEnvelope } from "react-icons/fa6";
+
+import marinaTimcook from "../main-assets/marina_timcook.JPG";
+import evacumatePreviewIcon from "../main-assets/evacumate_preview_icon.png";
+import marinaMlh from "../main-assets/marina_mlh.jpg";
+import roleGroups from "./data/roles";
 
 export default function Home() {
   return (
@@ -27,20 +33,20 @@ export default function Home() {
           <FaGithub size={30} />
         </a>
         <a
-          href="https://open.spotify.com/user/marinalee217?si=054c964ae79541e0"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-400"
-        >
-          <FaSpotify size={30} />
-        </a>
-        <a
           href="https://x.com/marinaxlee"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-400"
         >
           <FaXTwitter size={30} />
+        </a>
+        <a
+          href="https://open.spotify.com/user/marinalee217?si=054c964ae79541e0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-400"
+        >
+          <FaSpotify size={30} />
         </a>
         <a
           href="mailto:leemarina@gmail.com"
@@ -51,7 +57,51 @@ export default function Home() {
           <FaEnvelope size={30} />
         </a>
         </nav>
+
+        <section className="highlights" aria-label="Highlights">
+          <h2 className="highlights-title">HIGHLIGHTS</h2>
+          <div className="highlights-row">
+            <Image
+              src={marinaTimcook}
+              alt="Marina at a Tim Cook event"
+              className="highlight-image"
+            />
+            <Image
+              src={evacumatePreviewIcon}
+              alt="Evacumate preview icon"
+              className="highlight-image"
+            />
+            <Image
+              src={marinaMlh}
+              alt="Marina MLH highlight"
+              className="highlight-image"
+            />
+          </div>
+        </section>
+        {/* Role sections driven from `app/data/roles.ts` */}
+        {Object.entries(roleGroups).map(([key, items]) =>
+          items && items.length > 0 ? (
+            <section key={key} className={key} aria-label={key}>
+              <h2 className="currently-title">{key.toUpperCase()}</h2>
+              <div className="roles-list">
+                {items.map((it, i) => (
+                  <div className="role" key={i}>
+                    <div className="currently-content">
+                      <p className="currently-role">
+                        <span className="currently-bold">{it.company} /</span> {it.title}
+                      </p>
+                      <p className="currently-date">{it.year}</p>
+                    </div>
+                    <div className="currently-divider" />
+                  </div>
+                ))}
+              </div>
+            </section>
+          ) : null
+        )}
       </div>
+
+      
     </main>
   );
 }
