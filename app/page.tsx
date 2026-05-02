@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaSpotify, FaXTwitter, FaEnvelope } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaSpotify, FaXTwitter, FaEnvelope, FaHeart } from "react-icons/fa6";
+import { PiCoffeeBeanFill, PiCoffeeFill } from "react-icons/pi";
+import { TbBubbleTea } from "react-icons/tb";
 
 import marinaTimcook from "../main-assets/marina_timcook.JPG";
 import evacumatePreviewIcon from "../main-assets/evacumate_preview_icon.png";
@@ -61,21 +63,27 @@ export default function Home() {
         <section className="highlights" aria-label="Highlights">
           <h2 className="highlights-title">HIGHLIGHTS</h2>
           <div className="highlights-row">
-            <Image
-              src={marinaTimcook}
-              alt="Marina at a Tim Cook event"
-              className="highlight-image"
-            />
-            <Image
-              src={evacumatePreviewIcon}
-              alt="Evacumate preview icon"
-              className="highlight-image"
-            />
-            <Image
-              src={marinaMlh}
-              alt="Marina MLH highlight"
-              className="highlight-image"
-            />
+            <a href="https://www.entrepreneur.com/science-technology/meet-a-swift-student-challenge-winner-attending-apples-wwdc/492984" target="_blank" rel="noopener noreferrer">
+              <Image
+                src={marinaTimcook}
+                alt="Marina at a Tim Cook event"
+                className="highlight-image"
+              />
+            </a>
+            <a href="https://apps.apple.com/us/app/evacumate/id6753133736" target="_blank" rel="noopener noreferrer">
+              <Image
+                src={evacumatePreviewIcon}
+                alt="Evacumate preview icon"
+                className="highlight-image"
+              />
+            </a>
+            <a href="https://top.mlh.io/2023/profiles/marina-lee" target="_blank" rel="noopener noreferrer">
+              <Image
+                src={marinaMlh}
+                alt="Marina MLH highlight"
+                className="highlight-image"
+              />
+            </a>
           </div>
         </section>
         {/* Role sections driven from `app/data/roles.ts` */}
@@ -102,6 +110,18 @@ export default function Home() {
       </div>
 
       
+      <footer className="site-footer" aria-label="Site footer">
+        <div className="footer-text">
+          <span>DESIGNED & BUILT WITH</span>
+          <FaHeart aria-hidden="true" />
+          <span> + </span>
+          <TbBubbleTea aria-hidden="true"/>
+          <PiCoffeeFill aria-hidden="true" />
+          <PiCoffeeBeanFill aria-hidden="true" />
+          <span>BY MARINA</span>
+        </div>
+      </footer>
+
     </main>
   );
 }
