@@ -118,6 +118,27 @@ main {
   font-style: italic;
 }
 
+.home-meta {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  font-family: "Azeret Mono", monospace;
+  font-size: 0.72rem;
+  color: #575757;
+}
+
+.home-meta svg {
+  color: #d388a3;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.home-meta .home-meta-pin {
+  margin-left: 1.7rem;
+}
+
 .social-links {
   display: flex;
   align-items: flex-start;
@@ -307,6 +328,10 @@ main {
   .home-title {
     max-width: 100%;
     font-size: clamp(1.4rem, 5vw, 1.7rem);
+  }
+
+  .home-meta {
+    font-size: 0.68rem;
   }
 
   .social-links {

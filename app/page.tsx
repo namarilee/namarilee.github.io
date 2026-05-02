@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaSpotify, FaXTwitter, FaEnvelope, FaHeart } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaSpotify, FaXTwitter, FaEnvelope, FaHeart, FaGraduationCap, FaMapPin } from "react-icons/fa6";
 import { PiCoffeeBeanFill, PiCoffeeFill } from "react-icons/pi";
 import { TbBubbleTea } from "react-icons/tb";
 
@@ -16,6 +16,12 @@ export default function Home() {
           <span className="home-name">marina lee</span> is an ai-native, mobile-first design engineer with a love for crafting
           delightful interfaces and building inclusive communities.
         </h1>
+        <p className="home-meta" aria-label="Education and location">
+          <FaGraduationCap aria-hidden="true" />
+          <span>Computer Science BS + MS '27 @ USC</span>
+          <FaMapPin className="home-meta-pin" aria-hidden="true" />
+          <span>LA, SF</span>
+        </p>
 
         <nav className="social-links" aria-label="Social media links">
           <a
