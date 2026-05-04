@@ -59,6 +59,13 @@
 html {
   scroll-behavior: smooth;
   background: #f0eee6;
+  cursor: none;
+}
+
+html,
+body,
+body * {
+  cursor: none !important;
 }
 
 * {
@@ -223,7 +230,6 @@ main {
   border-radius: 20px;
   filter: grayscale(1);
   transition: filter 0.3s ease;
-  cursor: pointer;
 }
 
 .highlight-image:hover {

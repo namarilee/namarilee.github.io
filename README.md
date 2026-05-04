@@ -1,3 +1,3 @@
-My personal website (in progress)!
+My personal website!
 
 https://namarilee.github.io

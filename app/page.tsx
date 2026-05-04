@@ -31,6 +31,7 @@ export default function Home() {
           href="https://www.linkedin.com/in/marinahylee"
           target="_blank"
           rel="noopener noreferrer"
+          data-cursor-label="LinkedIn"
           className="hover:text-gray-400"
         >
           <FaLinkedin size={30} />
@@ -39,6 +40,7 @@ export default function Home() {
           href="https://github.com/namarilee"
           target="_blank"
           rel="noopener noreferrer"
+          data-cursor-label="GitHub"
           className="hover:text-gray-400"
         >
           <FaGithub size={30} />
@@ -47,6 +49,7 @@ export default function Home() {
           href="https://x.com/marinaxlee"
           target="_blank"
           rel="noopener noreferrer"
+          data-cursor-label="X / Twitter"
           className="hover:text-gray-400"
         >
           <FaXTwitter size={30} />
@@ -55,6 +58,7 @@ export default function Home() {
           href="https://open.spotify.com/user/marinalee217?si=054c964ae79541e0"
           target="_blank"
           rel="noopener noreferrer"
+          data-cursor-label="Spotify"
           className="hover:text-gray-400"
         >
           <FaSpotify size={30} />
@@ -63,6 +67,7 @@ export default function Home() {
           href="mailto:leemarina@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
+          data-cursor-label="Email"
           className="hover:text-gray-400"
         >
           <FaEnvelope size={30} />
@@ -72,21 +77,21 @@ export default function Home() {
         <section className="highlights" aria-label="Highlights">
           <h2 className="highlights-title">HIGHLIGHTS</h2>
           <div className="highlights-row">
-            <a href="https://www.entrepreneur.com/science-technology/meet-a-swift-student-challenge-winner-attending-apples-wwdc/492984" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.entrepreneur.com/science-technology/meet-a-swift-student-challenge-winner-attending-apples-wwdc/492984" target="_blank" rel="noopener noreferrer" data-cursor-label="WWDC25 SWIFT STUDENT CHALLENGE">
               <Image
                 src={marinaTimcook}
                 alt="Marina at a Tim Cook event"
                 className="highlight-image"
               />
             </a>
-            <a href="https://apps.apple.com/us/app/evacumate/id6753133736" target="_blank" rel="noopener noreferrer">
+            <a href="https://apps.apple.com/us/app/evacumate/id6753133736" target="_blank" rel="noopener noreferrer" data-cursor-label="EVACUMATE • SHIPPED TO APP STORE">
               <Image
                 src={evacumatePreviewIcon}
                 alt="Evacumate preview icon"
                 className="highlight-image"
               />
             </a>
-            <a href="https://top.mlh.io/2023/profiles/marina-lee" target="_blank" rel="noopener noreferrer">
+            <a href="https://top.mlh.io/2023/profiles/marina-lee" target="_blank" rel="noopener noreferrer" data-cursor-label="MLH TOP 50 HACKERS">
               <Image
                 src={marinaMlh}
                 alt="Marina MLH highlight"

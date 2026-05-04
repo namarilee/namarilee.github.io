@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import BackgroundGradient from "@/components/BackgroundGradient";
+import CustomCursor from "@/components/CustomCursor";
 
 export const metadata: Metadata = {
   title: "Marina Lee 👩🏻‍💻💫💖🍡",
@@ -13,7 +14,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ cursor: "none" }}>
+        <CustomCursor />
         <BackgroundGradient />        
         <main style={{ position: "relative", zIndex: 1 }}>{children}</main>
 
