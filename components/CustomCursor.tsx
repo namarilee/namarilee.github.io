@@ -10,6 +10,7 @@ export default function CustomCursor() {
   const measureRef = useRef<HTMLSpanElement>(null);
   const [label, setLabel] = useState('');
   const [expanded, setExpanded] = useState(false);
+  const [semiTransparent, setSemiTransparent] = useState(false);
   const [width, setWidth] = useState(BASE_SIZE);
   const [visible, setVisible] = useState(false);
 
@@ -37,17 +38,32 @@ export default function CustomCursor() {
     window.addEventListener('mousemove', move);
 
     const targets = document.querySelectorAll<HTMLElement>('[data-cursor-label]');
+    const semiTransparentTargets = document.querySelectorAll<HTMLElement>('[data-cursor-semi-transparent]');
 
     const enter = (event: Event) => {
       const element = event.currentTarget as HTMLElement;
       setLabel(element.dataset.cursorLabel ?? '');
       setExpanded(true);
+      setSemiTransparent(false);
     };
 
-    const leave = () => setExpanded(false);
+    const enterSemiTransparent = () => {
+      setSemiTransparent(true);
+      setExpanded(false);
+    };
+
+    const leave = () => {
+      setExpanded(false);
+      setSemiTransparent(false);
+    };
 
     targets.forEach((target) => {
       target.addEventListener('mouseenter', enter);
+      target.addEventListener('mouseleave', leave);
+    });
+
+    semiTransparentTargets.forEach((target) => {
+      target.addEventListener('mouseenter', enterSemiTransparent);
       target.addEventListener('mouseleave', leave);
     });
 
@@ -56,6 +72,10 @@ export default function CustomCursor() {
       if (raf) window.cancelAnimationFrame(raf);
       targets.forEach((target) => {
         target.removeEventListener('mouseenter', enter);
+        target.removeEventListener('mouseleave', leave);
+      });
+      semiTransparentTargets.forEach((target) => {
+        target.removeEventListener('mouseenter', enterSemiTransparent);
         target.removeEventListener('mouseleave', leave);
       });
     };
@@ -107,7 +127,7 @@ export default function CustomCursor() {
           backgroundColor: '#d388a3',
           color: '#ffffff',
           pointerEvents: 'none',
-          opacity: visible ? 1 : 0,
+          opacity: visible ? (semiTransparent ? 0.4 : 1) : 0,
           transition:
             'width 280ms ease-out, height 280ms ease-out, opacity 160ms ease-out',
           willChange: 'transform, width, height, opacity',

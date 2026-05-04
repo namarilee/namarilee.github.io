@@ -31,7 +31,7 @@ export default function Home() {
           href="https://www.linkedin.com/in/marinahylee"
           target="_blank"
           rel="noopener noreferrer"
-          data-cursor-label="LinkedIn"
+          data-cursor-semi-transparent
           className="hover:text-gray-400"
         >
           <FaLinkedin size={30} />
@@ -40,7 +40,7 @@ export default function Home() {
           href="https://github.com/namarilee"
           target="_blank"
           rel="noopener noreferrer"
-          data-cursor-label="GitHub"
+          data-cursor-semi-transparent
           className="hover:text-gray-400"
         >
           <FaGithub size={30} />
@@ -49,7 +49,7 @@ export default function Home() {
           href="https://x.com/marinaxlee"
           target="_blank"
           rel="noopener noreferrer"
-          data-cursor-label="X / Twitter"
+          data-cursor-semi-transparent
           className="hover:text-gray-400"
         >
           <FaXTwitter size={30} />
@@ -58,7 +58,7 @@ export default function Home() {
           href="https://open.spotify.com/user/marinalee217?si=054c964ae79541e0"
           target="_blank"
           rel="noopener noreferrer"
-          data-cursor-label="Spotify"
+          data-cursor-semi-transparent
           className="hover:text-gray-400"
         >
           <FaSpotify size={30} />
@@ -67,7 +67,7 @@ export default function Home() {
           href="mailto:leemarina@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          data-cursor-label="Email"
+          data-cursor-semi-transparent
           className="hover:text-gray-400"
         >
           <FaEnvelope size={30} />
