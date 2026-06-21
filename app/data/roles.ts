@@ -1,6 +1,6 @@
 export const roleGroups = {
   currently: [
-    { company: "AWS", title: "Frontend, CX Core Console", year: "Summer 2026" },
+    { company: "AWS", title: "Fullstack, Launch Wizard", year: "2026" },
   ],
   previously: [
     { company: "AWS", title: "Frontend, Bedrock", year: "2025" },
