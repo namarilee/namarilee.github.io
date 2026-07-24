@@ -4,6 +4,7 @@ import { PiCoffeeBeanFill, PiCoffeeFill } from "react-icons/pi";
 import { TbBubbleTea } from "react-icons/tb";
 
 import marinaTimcook from "../main-assets/marina_timcook.JPG";
+import decalApp from "../main-assets/decal_preview.png";
 import evacumatePreviewIcon from "../main-assets/evacumate_preview_icon.png";
 import marinaMlh from "../main-assets/marina_mlh.jpg";
 import roleGroups from "./data/roles";
@@ -80,7 +81,14 @@ export default function Home() {
             <a href="https://www.entrepreneur.com/science-technology/meet-a-swift-student-challenge-winner-attending-apples-wwdc/492984" target="_blank" rel="noopener noreferrer" data-cursor-label="WWDC25 SWIFT STUDENT CHALLENGE">
               <Image
                 src={marinaTimcook}
-                alt="Marina at a Tim Cook event"
+                alt="Marina at WWDC26"
+                className="highlight-image"
+              />
+            </a>
+            <a href="https://youtu.be/TqeBSXZq5AY" target="_blank" rel="noopener noreferrer" data-cursor-label="COMING SOON">
+              <Image
+                src={decalApp}
+                alt="Decal"
                 className="highlight-image"
               />
             </a>
